@@ -1,31 +1,24 @@
 {
-  "lat": 39.7385,
-  "lon": -104.9849,
-  "timezone": "America/Denver",
-  "timezone_offset": -21600,
-  "current": {
-    "dt": 1623616382,
+    "dt": 1623623245,
     "sunrise": 1623583887,
     "sunset": 1623637732,
-    "temp": 306.6,
-    "feels_like": 305.88,
-    "pressure": 1010,
-    "humidity": 31,
-    "dew_point": 287.17,
-    "uvi": 9.12,
-    "clouds": 3,
+    "temp": 91.89,
+    "feels_like": 89.94,
+    "pressure": 1009,
+    "humidity": 29,
+    "dew_point": 55.11,
+    "uvi": 5.85,
+    "clouds": 25,
     "visibility": 10000,
-    "wind_speed": 0.89,
-    "wind_deg": 360,
-    "wind_gust": 3.58,
+    "wind_speed": 1.01,
+    "wind_deg": 13,
+    "wind_gust": 1.99,
     "weather": [
       {
-        "id": 800,
-        "main": "Clear",
-        "description": "clear sky",
-        "icon": "01d"
+        "id": 802,
+        "main": "Clouds",
+        "description": "scattered clouds",
+        "icon": "03d"
       }
-    ]}
+    ]
 }
-  
-  

@@ -7,12 +7,22 @@ class DailyWeather
               :conditions, 
               :icon
   def initialize(data)
-    @date = Time.at(data[:dt]).to_s(:db)
-    @sunrise = Time.at(data[:sunrise]).to_s(:time)
-    @sunset = Time.at(data[:sunset]).to_s(:time)
+    @date = convert_time_just_date(data[:dt])
+    @sunrise = convert_time(data[:sunrise])
+    @sunset = convert_time(data[:sunset])
     @max_temp = data[:temp][:max]
     @min_temp = data[:temp][:min]
     @conditions = data[:weather].first[:description]
     @icon = data[:weather].first[:icon]
+  end
+
+  def convert_time(time)
+    Time.at(time)
+    .strftime("%m/%d/%Y at %I:%M%p")
+  end
+
+  def convert_time_just_date(time)
+    Time.at(time)
+    .strftime("%m/%d/%Y")
   end
 end

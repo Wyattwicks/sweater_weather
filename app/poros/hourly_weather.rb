@@ -4,9 +4,14 @@ class HourlyWeather
               :conditions, 
               :icon
   def initialize(data)
-    @time = Time.at(data[:dt]).to_s(:db)
+    @time = convert_time(data[:dt])
     @temperature = data[:temp]
-    @conditions = data[:weather].first[:description]
-    @icon = data[:weather].first[:icon]
+    @conditions = data[:weather][0][:description]
+    @icon = data[:weather][0][:icon]
+  end
+
+  def convert_time(time)
+    Time.at(time)
+    .strftime("%I:%M%p")
   end
 end

@@ -9,17 +9,22 @@ class CurrentWeather
               :visibility, 
               :conditions, 
               :icon
-              
+
   def initialize(data)
-    @datetime = Time.at(data[:dt]).to_s(:db)
-    @sunrise = Time.at(data[:sunrise]).to_s(:time)
-    @sunset = Time.at(data[:sunset]).to_s(:time)
+    @datetime = convert_time(data[:dt])
+    @sunrise = convert_time(data[:sunrise])
+    @sunset = convert_time(data[:sunset])
     @temperature = data[:temp]
     @feels_like = data[:feels_like]
     @humidity = data[:humidity]
     @uvi = data[:uvi]
     @visibility = data[:visibility]
-    @conditions = data[:weather].first[:description]
-    @icon = data[:weather].first[:icon]
+    @conditions = data[:weather][0][:description]
+    @icon = data[:weather][0][:icon]
+  end
+
+  def convert_time(time)
+    Time.at(time)
+    .strftime("%m/%d/%Y at %I:%M%p")
   end
 end
