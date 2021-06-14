@@ -1,5 +1,6 @@
 class Api::V1::BookController < ApplicationController
-  def search
-    everything = EverythingFacade.get_everything(location, quantity)
+  def show
+    everything = EverythingFacade.get_everything(params[:location], params[:quantity])
     render json: BookSerializer.new(everything)
   end
+end

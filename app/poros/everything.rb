@@ -1,4 +1,4 @@
-class Book
+class Everything
   attr_reader :destination,
               :forecast,
               :total_books_found,
@@ -6,11 +6,11 @@ class Book
               :quantity
 
 
-  def initialize(forecast, books, amount)
+  def initialize(forecast, books, amount, location)
     @id = nil
     @type = "books"
-    @forecast = forecast
-    @destination = params[:location]
+    @forecast = forecast.current_weather
+    @destination = location
     @books = books
     @total_books_found = amount
     @quantity = books.count

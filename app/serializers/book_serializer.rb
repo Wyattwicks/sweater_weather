@@ -1,4 +1,4 @@
 class BookSerializer
   include FastJsonapi::ObjectSerializer
-    attributes :destination, :forecast, :total_books_found, :books, :quantity
+    attributes :id, :type, :forecast, :destination,  :total_books_found, :books, :quantity
 end
