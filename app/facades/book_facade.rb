@@ -7,7 +7,8 @@ class BookFacade
       data[:docs].each do |book|
         books << Book.new(book)
       end
-      total_books_found = books.count
+      
+      books
     end
   end
 end
