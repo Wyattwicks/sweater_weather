@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe 'Book PORO' do
-  it 'creates book object with neccesary data' do
-    data = File.read("spec/fixtures/book.json")
+RSpec.describe 'Everything PORO' do
+  it 'creates an object that has all neccesary data' do
+    data = File.read("spec/fixtures/everything.json")
     response = JSON.parse(data, symbolize_names: true) 
     book_data = Book.new(response)
     expect(book_data).to be_a(Book)
