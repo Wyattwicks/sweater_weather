@@ -3,16 +3,18 @@ class Everything
               :forecast,
               :total_books_found,
               :books,
-              :quantity
+              :quantity,
+              :id,
+              :type
 
 
-  def initialize(forecast, books, amount, location)
+  def initialize(data)
     @id = nil
     @type = "books"
-    @forecast = forecast.current_weather
-    @destination = location
-    @books = books
-    @total_books_found = amount
-    @quantity = books.count
+    @forecast = data[:forecast].current_weather
+    @destination = data[:location]
+    @books = data[:books]
+    @total_books_found = data[:amount]
+    @quantity = data[:books].count
   end
 end

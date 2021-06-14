@@ -18,5 +18,14 @@ class ForecastFacade
       Forecast.new(current_weather, daily_weather, hourly_weather)
       
     end
+
+    #  def get_summary_forecast(location)
+    #   coords = LocationsFacade.get_lat_lon(location)
+    #   lat = coords.lat
+    #   lon = coords.lon
+    #   data = WeatherService.get_forecast(lat, lon)
+    #   current_weather = CurrentWeather.new(data[:current])
+    #   summary = current_weather.
+    # end
   end
 end

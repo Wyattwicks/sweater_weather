@@ -7,6 +7,7 @@ RSpec.describe "Everything API", type: :request do
       quantity = 2
       get "/api/v1/book-search?location=#{test_location}&quantity=#{quantity}"
       everything = JSON.parse(response.body, symbolize_names: true)
+      binding.pry
       
 
       expect(response).to be_successful

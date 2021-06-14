@@ -5,6 +5,8 @@ describe "Everything Facade", :vcr do
     location = "denver, co"
     quantity = 5
     response =EverythingFacade.get_everything(location, 5)
-    binding.pry
+
+    expect(response.final_object).to be_a(Hash)
+    expect(response).to be_a(Everything)
   end
 end
