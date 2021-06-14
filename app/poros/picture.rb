@@ -5,7 +5,8 @@ class Picture
               :image_url,
               :source,
               :author,
-              :credit
+              :credit,
+              :author_url
 
   def initialize(data)
     @id = nil
@@ -15,5 +16,6 @@ class Picture
     @credit = {}
       @credit[:source] = data[:links][:html]
       @credit[:author] = data[:user][:username]
+      @credit[:author_url] = data[:user][:portfolio_url]
   end
 end
