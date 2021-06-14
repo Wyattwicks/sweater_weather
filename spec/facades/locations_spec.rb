@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe "LocationsFacade", :vcr do
+describe "Locations Facade", :vcr do
   it "returns a lat and long coordinate based on location" do
     location = "denver, co"
     coords = LocationsFacade.get_lat_lon(location)
