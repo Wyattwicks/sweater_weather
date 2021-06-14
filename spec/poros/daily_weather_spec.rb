@@ -15,4 +15,4 @@ RSpec.describe 'Daily Weather PORO' do
     expect(daily_weather.min_temp).to eq(67.41)
   end
 end
-#Add more than 1 day of data
+

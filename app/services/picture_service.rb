@@ -1,7 +1,7 @@
 class PictureService
   class << self
 
-    def get_image(location)
+    def get_picture(location)
       response = conn.get("/search/photos") do |req|
         req.params['query'] = location
       end
