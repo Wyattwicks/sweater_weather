@@ -3,12 +3,7 @@ class BookFacade
     def get_books_about_location(location, quantity)
       data = BookService.get_books_by_location(location)
 
-      # books = []
-      # data[:docs].first(quantity).each do |book|
-      #   books << Book.new(book)
-      # end
-      # books
-      i = quantity.to_i
+      i = (quantity.to_i - 1)
       books = data[:docs][0..i].map do |book|
         Book.new(book)
       end

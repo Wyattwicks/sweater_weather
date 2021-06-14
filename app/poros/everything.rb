@@ -11,8 +11,10 @@ class Everything
   def initialize(data)
     @id = nil
     @type = "books"
-    @forecast = data[:forecast].current_weather
     @destination = data[:location]
+    @forecast = {}
+      @forecast[:summary]= data[:forecast].current_weather.conditions
+      @forecast[:temperature]= data[:forecast].current_weather.temperature
     @books = data[:books]
     @total_books_found = data[:amount]
     @quantity = data[:books].count
