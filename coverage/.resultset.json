@@ -1,6 +1,28 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/wyattwicks/turing/3module/sweater_weather/sweater_weather/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/wyattwicks/turing/3module/sweater_weather/sweater_weather/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/wyattwicks/turing/3module/sweater_weather/sweater_weather/app/facades/forecast_facade.rb": {
         "lines": [
           1,
@@ -285,8 +307,38 @@
           null,
           null
         ]
+      },
+      "/Users/wyattwicks/turing/3module/sweater_weather/sweater_weather/app/controllers/api/v1/users_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/wyattwicks/turing/3module/sweater_weather/sweater_weather/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/wyattwicks/turing/3module/sweater_weather/sweater_weather/app/serializers/users_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1623710757
+    "timestamp": 1623784966
   }
 }
