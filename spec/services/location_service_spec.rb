@@ -12,4 +12,18 @@ RSpec.describe "Location API Service" do
 		# "lng": -104.984853
     end
   end
+
+  describe "get road trip info for short route", :vcr do
+    it "can return data about a route between two points" do
+      results = LocationService.get_route("Denver,CO", "Pueblo,CO")
+      expect(results).to be_a(Hash)
+      expect(results).to have_key(:route)
+    end
+
+    it "can return data for long route" do
+      results = LocationService.get_route("New York,NY", "Los Angeles,CA")
+      expect(results).to be_a(Hash)
+      expect(results).to have_key(:route)
+    end
+  end
 end

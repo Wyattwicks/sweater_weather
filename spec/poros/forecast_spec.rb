@@ -1,8 +1,8 @@
 
 require 'rails_helper'
 
-RSpec.describe 'Forecast PORO' do
-  it 'creates a forecast object with neccesary data' do
+RSpec.describe "Forecast PORO" do
+  it "creates a forecast object with neccesary data" do
     current_weather_data = File.read("spec/fixtures/current_weather.json")
     current_response = JSON.parse(current_weather_data, symbolize_names: true) 
     current_weather = CurrentWeather.new(current_response)
