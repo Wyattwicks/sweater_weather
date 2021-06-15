@@ -42,7 +42,7 @@ RSpec.describe 'Users Create' do
       expect(attributes).to_not have_key(:password)
     end
   end
-  describe "sad paths" do
+  describe "sad paths", :vcr do
     it "returns 400 error if user cant be created" do
       user_params = {
         "email": "email@email.com",
