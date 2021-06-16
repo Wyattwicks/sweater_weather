@@ -1,4 +1,4 @@
-class PictureService
+class BackgroundService
   class << self
 
     def get_picture(location)

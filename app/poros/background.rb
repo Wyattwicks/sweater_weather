@@ -1,4 +1,4 @@
-class Picture
+class Background
   attr_reader :id,
               :type,
               :description,

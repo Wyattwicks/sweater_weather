@@ -1,11 +1,11 @@
-class Api::V1::PictureController < ApplicationController
+class Api::V1::BackgroundController < ApplicationController
 
   def index
     if params[:location] == nil || params[:location].empty?
       render json: { status: 404, message: 'No location given / location not valid' }, status: :not_found
     else
-      picture = PictureFacade.picture(location)
-      render json: DestinationSerializer.new(image)
+      picture = BackgroundFacade.picture(location)
+      render json: BackgroundSerializer.new(image)
     end
   end
 
