@@ -34,6 +34,14 @@ Endpoint Requests and Responses:
   - response: ![Screen Shot 2021-06-15 at 11 10 28 PM](https://user-images.githubusercontent.com/74991865/122161424-ec1be280-ce2e-11eb-93b1-0ebf833447b8.png)
   - request (user registration): ![Screen Shot 2021-06-15 at 11 14 16 PM](https://user-images.githubusercontent.com/74991865/122161751-7d8b5480-ce2f-11eb-95a6-df98dbc517d8.png)
   - response: ![Screen Shot 2021-06-15 at 11 15 21 PM](https://user-images.githubusercontent.com/74991865/122161792-93991500-ce2f-11eb-92cf-afde00cc4f67.png)
+  - request (user login): ![Screen Shot 2021-06-15 at 11 16 47 PM](https://user-images.githubusercontent.com/74991865/122161896-cf33df00-ce2f-11eb-99f0-922ef9584661.png)
+  - response: ![Screen Shot 2021-06-15 at 11 17 38 PM](https://user-images.githubusercontent.com/74991865/122161950-e672cc80-ce2f-11eb-8157-11fd3f243d69.png)
+  - request (road-trip): ![Screen Shot 2021-06-15 at 11 18 19 PM](https://user-images.githubusercontent.com/74991865/122161993-00141400-ce30-11eb-9241-30ad051c6d1c.png)
+  - response ![Screen Shot 2021-06-15 at 11 18 50 PM](https://user-images.githubusercontent.com/74991865/122162057-15893e00-ce30-11eb-9f0e-ee84bc8116f7.png)
+
+
+
+
 
 
 
