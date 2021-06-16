@@ -59,8 +59,8 @@ Sweater Weather is a back-end Rails project that explores how a back-end web dev
 * Wyatt Wicks [GitHub](https://github.com/Wyattwicks) | [LinkedIn](https://www.linkedin.com/in/wyattwicks/)
 
 
-External APIs used
-  http://www.mapquestapi.com/geocoding/v1/address
-  http://www.mapquestapi.com/directions/v2/route
-  https://api.openweathermap.org/data/2.5/onecall
-  https://api.unsplash.com/search/photos
+## External APIs used
+  - http://www.mapquestapi.com/geocoding/v1/address
+  - http://www.mapquestapi.com/directions/v2/route
+  - https://api.openweathermap.org/data/2.5/onecall
+  - https://api.unsplash.com/search/photos
