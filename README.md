@@ -24,8 +24,9 @@ Set-up Instructions:
    - rails s 
   
  Testing:
-  Full tests can be run with 'bundle exec rspec' in terminal
-  Individual test files can be run with 'bundle exec rspec <file_name>
+  - Full tests can be run with 'bundle exec rspec' in terminal
+  - Individual test files can be run with 'bundle exec rspec <file_name>
+  - Testing includes sad path / error handling
   
 Endpoint Requests and Responses: 
   - request (forecast for location): ![Screen Shot 2021-06-15 at 11 07 36 PM](https://user-images.githubusercontent.com/74991865/122161199-87608800-ce2e-11eb-8980-be84fb75a04c.png)
@@ -40,7 +41,7 @@ Endpoint Requests and Responses:
   - response ![Screen Shot 2021-06-15 at 11 18 50 PM](https://user-images.githubusercontent.com/74991865/122162057-15893e00-ce30-11eb-9f0e-ee84bc8116f7.png)
 
 
-
+Postman Request Suite:
 
 
 
