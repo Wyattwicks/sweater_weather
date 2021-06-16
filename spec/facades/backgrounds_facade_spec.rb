@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-describe "Background Facade", :vcr do
+describe "Backgrounds Facade", :vcr do
   it "returns a picture object" do
     location = "denver, co"
-    pic = BackgroundFacade.picture(location)
+    pic = BackgroundsFacade.picture(location)
     expect(pic).to be_a(Background)
     expect(pic.id).to eq(nil)
     expect(pic.credit).to be_a(Hash)
