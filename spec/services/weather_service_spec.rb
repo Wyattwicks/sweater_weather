@@ -8,8 +8,6 @@ RSpec.describe "Weather API Service" do
 		lon = -104.984853
     response = WeatherService.get_forecast(lat, lon)
     expect(response).to be_a(Hash)
-    #add testing
-    
     end
   end
 end

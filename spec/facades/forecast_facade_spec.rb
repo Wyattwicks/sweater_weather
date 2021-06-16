@@ -30,7 +30,8 @@ describe "Forecast Facade", :vcr do
       location = "pueblo, co"
       response = ForecastFacade.get_hourly_weather_at_final_city(location)
 
-      expect(response).to be_a(Hash)
+      expect(response).to be_a(Array)
+      expect(response.first).to be_a(Hash)
   end
 
 end
