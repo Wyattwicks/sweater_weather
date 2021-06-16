@@ -18,6 +18,6 @@ class Route
     @hours_to_arrival = data[:route][:formattedTime].split(":").first.to_i
     @weather_at_eta = {}
     @weather_at_eta[:conditions] = forecast[@hours_to_arrival][:weather][0][:description]
-    @weather_at_eta[:temperature] = forecast[@hours_to_arrival][:weather][0][:temperature]
+    @weather_at_eta[:temperature] = forecast[@hours_to_arrival][:temp]
   end
 end
