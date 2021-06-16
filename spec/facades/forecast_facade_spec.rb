@@ -22,7 +22,7 @@ describe "Forecast Facade", :vcr do
     response.hourly_weather.each do |hour|
       expect(hour).to be_a(HourlyWeather)
       expect(hour.conditions).to be_a(String)
-      expect(hour.temperature).to be_a(Float)
+      expect(hour.temperature).to be_a(Numeric)
     end
   end
 

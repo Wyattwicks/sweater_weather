@@ -12,14 +12,7 @@ describe "Locations Facade", :vcr do
     destination = "pueblo, co"
     route = LocationsFacade.get_road_trip(origin, destination)
     expect(route).to be_a(Route)
-    expect(route.weather_at_eta).to be_a(Array)
-  end
-
-  it 'returns hourly forecast for end city' do
-    forecast = LocationsFacade.hourly_forecast("Pueblo,CO")
-    expect(forecast).to be_a(Hash)
-    expect(forecast.first).to be_a(Array)
-    expect(forecast.count).to eq(7)
+    expect(route.weather_at_eta).to be_a(Hash)
   end
 
   it 'returns a route between two locations if route is long' do

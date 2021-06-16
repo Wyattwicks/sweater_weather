@@ -22,7 +22,7 @@ class ForecastFacade
       coords = LocationsFacade.get_lat_lon(location)
       lat = coords.lat
       lon = coords.lon
-      data = WeatherService.get_forecast(lat, lon)
+      WeatherService.get_forecast(lat, lon)
     end
   end
 end
