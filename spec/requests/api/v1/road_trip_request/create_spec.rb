@@ -68,5 +68,27 @@ RSpec.describe 'Road-Trip create' do
       expect(road_trip[:data][:attributes][:travel_time]).to eq("Impossible route")
       expect(road_trip[:data][:attributes][:weather_at_eta]).to eq({})
     end
+
+    it "returns forecast for long trip eta" do
+      trip_params = {
+        origin: "denver, co",
+        destination: "vancouver, ca",
+        api_key: "123"
+      }
+      headers = {
+        CONTENT_TYPE: "application/json",
+        ACCEPT: "application/json"
+      }
+
+      post '/api/v1/road_trip', headers: headers, params: trip_params.to_json
+      road_trip = JSON.parse(response.body, symbolize_names: true)
+
+      expect(response).to be_successful
+      expect(response.status).to eq(200)
+      expect(road_trip[:data][:attributes]).to have_key(:start_city)
+      expect(road_trip[:data][:attributes]).to have_key(:end_city)
+      expect(road_trip[:data][:attributes]).to have_key(:travel_time)
+      expect(road_trip[:data][:attributes][:weather_at_eta]).to be_a(Hash)
+    end
   end
 end
