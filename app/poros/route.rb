@@ -5,6 +5,7 @@ class Route
               :travel_time, 
               :hours_to_arrival,
               :weather_at_eta,
+              :conditions,
               :temperature
               
 
