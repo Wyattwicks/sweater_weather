@@ -14,7 +14,7 @@ RSpec.describe 'Road-Trip create' do
       User.create!(user_params)
 
     post '/api/v1/road_trip', headers: headers, params: user_params.to_json
-    road_trip = parse(response.body, symbolize_names: true)
+    road_trip = JSON.parse(response.body, symbolize_names: true)
 
     expect(response).to be_successful
       expect(response.status).to eq(200)

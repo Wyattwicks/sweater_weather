@@ -25,4 +25,12 @@ describe "Forecast Facade", :vcr do
       expect(hour.temperature).to be_a(Float)
     end
   end
+
+  it "returns hourly forecast for destination city" do
+      location = "pueblo, co"
+      response = ForecastFacade.get_hourly_weather_at_final_city(location)
+
+      expect(response).to be_a(Hash)
+  end
+
 end

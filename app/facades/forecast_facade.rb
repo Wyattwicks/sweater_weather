@@ -15,8 +15,14 @@ class ForecastFacade
         HourlyWeather.new(hourly_data)
       end
 
-      Forecast.new(current_weather, daily_weather, hourly_weather)
-      
+      Forecast.new(current_weather, daily_weather, hourly_weather)    
+    end
+
+    def get_hourly_weather_at_final_city(location)
+      coords = LocationsFacade.get_lat_lon(location)
+      lat = coords.lat
+      lon = coords.lon
+      data = WeatherService.get_forecast(lat, lon)
     end
   end
 end
