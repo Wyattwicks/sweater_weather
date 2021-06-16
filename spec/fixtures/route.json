@@ -1,0 +1,136 @@
+{
+  "route": {
+    "hasTollRoad": false,
+    "hasBridge": true,
+    "boundingBox": {
+      "lr": {
+        "lng": -104.605087,
+        "lat": 38.265427
+      },
+      "ul": {
+        "lng": -104.98761,
+        "lat": 39.738453
+      }
+    },
+    "distance": 111.38,
+    "hasTimedRestriction": false,
+    "hasTunnel": false,
+    "hasHighway": true,
+    "computedWaypoints": [],
+    "routeError": {
+      "errorCode": -400,
+      "message": ""
+    },
+    "formattedTime": "01:44:22",
+    "sessionId": "60c92807-03ac-6750-02b4-32bc-0e40d8a8f57d",
+    "hasAccessRestriction": false,
+    "realTime": 7427,
+    "hasSeasonalClosure": false,
+    "hasCountryCross": false,
+    "fuelUsed": 5.5,
+    "options": {
+      "arteryWeights": [],
+      "cyclingRoadFactor": 1,
+      "timeType": 0,
+      "useTraffic": false,
+      "returnLinkDirections": false,
+      "countryBoundaryDisplay": true,
+      "enhancedNarrative": false,
+      "locale": "en_US",
+      "tryAvoidLinkIds": [],
+      "drivingStyle": 2,
+      "doReverseGeocode": true,
+      "generalize": -1,
+      "mustAvoidLinkIds": [],
+      "sideOfStreetDisplay": true,
+      "routeType": "FASTEST",
+      "avoidTimedConditions": false,
+      "routeNumber": 0,
+      "shapeFormat": "raw",
+      "maxWalkingDistance": -1,
+      "destinationManeuverDisplay": true,
+      "transferPenalty": -1,
+      "narrativeType": "text",
+      "walkingSpeed": -1,
+      "urbanAvoidFactor": -1,
+      "stateBoundaryDisplay": true,
+      "unit": "M",
+      "highwayEfficiency": 22,
+      "maxLinkId": 0,
+      "maneuverPenalty": -1,
+      "avoidTripIds": [],
+      "filterZoneFactor": -1,
+      "manmaps": "true"
+    },
+    "locations": [
+      {
+        "dragPoint": false,
+        "displayLatLng": {
+          "lng": -104.984856,
+          "lat": 39.738453
+        },
+        "adminArea4": "Denver County",
+        "adminArea5": "Denver",
+        "postalCode": "",
+        "adminArea1": "US",
+        "adminArea3": "CO",
+        "type": "s",
+        "sideOfStreet": "N",
+        "geocodeQualityCode": "A5XAX",
+        "adminArea4Type": "County",
+        "linkId": 40287819,
+        "street": "",
+        "adminArea5Type": "City",
+        "geocodeQuality": "CITY",
+        "adminArea1Type": "Country",
+        "adminArea3Type": "State",
+        "latLng": {
+          "lng": -104.984853,
+          "lat": 39.738453
+        }
+      },
+      {
+        "dragPoint": false,
+        "displayLatLng": {
+          "lng": -104.610413,
+          "lat": 38.265427
+        },
+        "adminArea4": "Pueblo County",
+        "adminArea5": "Pueblo",
+        "postalCode": "",
+        "adminArea1": "US",
+        "adminArea3": "CO",
+        "type": "s",
+        "sideOfStreet": "N",
+        "geocodeQualityCode": "A5XAX",
+        "adminArea4Type": "County",
+        "linkId": 54760889,
+        "street": "",
+        "adminArea5Type": "City",
+        "geocodeQuality": "CITY",
+        "adminArea1Type": "Country",
+        "adminArea3Type": "State",
+        "latLng": {
+          "lng": -104.610415,
+          "lat": 38.265425
+        }
+      }
+    ],
+    "time": 6262,
+    "hasUnpaved": false,
+    "locationSequence": [
+      0,
+      1
+    ],
+    "hasFerry": false
+  },
+  "info": {
+    "statuscode": 0,
+    "copyright": {
+      "imageAltText": "© 2021 MapQuest, Inc.",
+      "imageUrl": "http://api.mqcdn.com/res/mqlogo.gif",
+      "text": "© 2021 MapQuest, Inc."
+    },
+    "messages": []
+  }
+}

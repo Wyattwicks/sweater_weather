@@ -22,7 +22,15 @@ describe "Forecast Facade", :vcr do
     response.hourly_weather.each do |hour|
       expect(hour).to be_a(HourlyWeather)
       expect(hour.conditions).to be_a(String)
-      expect(hour.temperature).to be_a(Float)
+      expect(hour.temperature).to be_a(Numeric)
     end
   end
+
+  it "returns hourly forecast for destination city" do
+      location = "pueblo, co"
+      response = ForecastFacade.get_hourly_weather_at_final_city(location)
+
+      expect(response).to be_a(Hash)
+  end
+
 end

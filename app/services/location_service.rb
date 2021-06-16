@@ -8,6 +8,14 @@ class LocationService
       parse_data(response)
     end
 
+    def get_route(origin, destination)
+      response = conn.get("/directions/v2/route") do |req| 
+        req.params['from'] = origin
+        req.params['to'] = destination 
+      end
+      parse_data(response)
+    end
+
 
     private
 
