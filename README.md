@@ -52,17 +52,7 @@ Sweater Weather is a back-end Rails project that explores how a back-end web dev
   - example response: ![Screen Shot 2021-06-16 at 8 51 07 AM](https://user-images.githubusercontent.com/74991865/122241746-07630e00-ce80-11eb-9e9a-d57b14bed8cd.png)
 ### Route for Given Origin and Endpoint with Weather for Endpoint at ETA
   - request (road-trip): ![Screen Shot 2021-06-15 at 11 18 19 PM](https://user-images.githubusercontent.com/74991865/122161993-00141400-ce30-11eb-9241-30ad051c6d1c.png)
-  - example response ![Screen Shot 2021-06-15 at 11 18 50 PM](https://user-images.githubusercontent.com/74991865/122162057-15893e00-ce30-11eb-9f0e-ee84bc8116f7.png)
-
-
-
-
-
-
-
-
-
-
+  - example response: ![Screen Shot 2021-06-16 at 8 59 29 AM](https://user-images.githubusercontent.com/74991865/122243253-35951d80-ce81-11eb-9441-18767386aabc.png)
 
 ## Author:
 * Wyatt Wicks [GitHub](https://github.com/Wyattwicks) | [LinkedIn](https://www.linkedin.com/in/wyattwicks/)
