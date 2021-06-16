@@ -38,16 +38,21 @@ Sweater Weather is a back-end Rails project that explores how a back-end web dev
   - Testing includes sad path / error handling
   
 ## Endpoint Requests and Responses: 
-  - request (forecast for location): ![Screen Shot 2021-06-15 at 11 07 36 PM](https://user-images.githubusercontent.com/74991865/122161199-87608800-ce2e-11eb-8980-be84fb75a04c.png)
-  - response: ![Screen Shot 2021-06-15 at 11 08 34 PM](https://user-images.githubusercontent.com/74991865/122161260-a101cf80-ce2e-11eb-8a6d-57866038bcc2.png)
+### Weather Forecast for Location
+  - request: ![Screen Shot 2021-06-15 at 11 07 36 PM](https://user-images.githubusercontent.com/74991865/122161199-87608800-ce2e-11eb-8980-be84fb75a04c.png)
+  - example response: ![Screen Shot 2021-06-16 at 8 41 53 AM](https://user-images.githubusercontent.com/74991865/122240096-ba326c80-ce7e-11eb-8be3-89021869d99c.png)
+### Background Image for Location
   - request (picture for location): ![Screen Shot 2021-06-15 at 11 13 35 PM](https://user-images.githubusercontent.com/74991865/122161670-56348780-ce2f-11eb-9086-d5e67e3fe2c0.png)
-  - response: ![Screen Shot 2021-06-15 at 11 10 28 PM](https://user-images.githubusercontent.com/74991865/122161424-ec1be280-ce2e-11eb-93b1-0ebf833447b8.png)
-  - request (user registration): ![Screen Shot 2021-06-15 at 11 14 16 PM](https://user-images.githubusercontent.com/74991865/122161751-7d8b5480-ce2f-11eb-95a6-df98dbc517d8.png)
-  - response: ![Screen Shot 2021-06-15 at 11 15 21 PM](https://user-images.githubusercontent.com/74991865/122161792-93991500-ce2f-11eb-92cf-afde00cc4f67.png)
-  - request (user login): ![Screen Shot 2021-06-15 at 11 16 47 PM](https://user-images.githubusercontent.com/74991865/122161896-cf33df00-ce2f-11eb-99f0-922ef9584661.png)
-  - response: ![Screen Shot 2021-06-15 at 11 17 38 PM](https://user-images.githubusercontent.com/74991865/122161950-e672cc80-ce2f-11eb-8157-11fd3f243d69.png)
+  - example response: ![Screen Shot 2021-06-16 at 8 43 03 AM](https://user-images.githubusercontent.com/74991865/122240290-e3eb9380-ce7e-11eb-944f-0bcd56877642.png)
+### Registering a User
+  - request: ![Screen Shot 2021-06-15 at 11 14 16 PM](https://user-images.githubusercontent.com/74991865/122161751-7d8b5480-ce2f-11eb-95a6-df98dbc517d8.png)
+  - example response: ![Screen Shot 2021-06-16 at 8 45 45 AM](https://user-images.githubusercontent.com/74991865/122240843-4f356580-ce7f-11eb-8296-d1c028466841.png)
+### User Login
+  - request: ![Screen Shot 2021-06-15 at 11 16 47 PM](https://user-images.githubusercontent.com/74991865/122161896-cf33df00-ce2f-11eb-99f0-922ef9584661.png)
+  - example response: ![Screen Shot 2021-06-16 at 8 51 07 AM](https://user-images.githubusercontent.com/74991865/122241746-07630e00-ce80-11eb-9e9a-d57b14bed8cd.png)
+### Route for Given Origin and Endpoint with Weather for Endpoint at ETA
   - request (road-trip): ![Screen Shot 2021-06-15 at 11 18 19 PM](https://user-images.githubusercontent.com/74991865/122161993-00141400-ce30-11eb-9241-30ad051c6d1c.png)
-  - response ![Screen Shot 2021-06-15 at 11 18 50 PM](https://user-images.githubusercontent.com/74991865/122162057-15893e00-ce30-11eb-9f0e-ee84bc8116f7.png)
+  - example response ![Screen Shot 2021-06-15 at 11 18 50 PM](https://user-images.githubusercontent.com/74991865/122162057-15893e00-ce30-11eb-9f0e-ee84bc8116f7.png)
 
 
 
