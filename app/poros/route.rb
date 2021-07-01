@@ -21,3 +21,4 @@ class Route
     @weather_at_eta[:temperature] = forecast[@hours_to_arrival][:temp]
   end
 end
+
