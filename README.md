@@ -31,6 +31,9 @@ Sweater Weather is a back-end Rails project that explores how a back-end web dev
  - run Postman (https://www.postman.com/)
  - Add requests using format defined in Endpoint Requests and Responses below.
  - Note: requests use JSON body format. In Postman, under the address bar, click on “Body”, select “raw”, which will show a dropdown that says “Text” in it, choose “JSON” from the list.
+
+ ### Postman Link
+ [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/15721777-61b82803-8a03-45ec-b998-5f735bcb3f57?action=collection%2Ffork&collection-url=entityId%3D15721777-61b82803-8a03-45ec-b998-5f735bcb3f57%26entityType%3Dcollection%26workspaceId%3D3d084559-ed5b-43a5-981c-35220453a7d7)
   
  ## Testing:
   - Full tests can be run with 'bundle exec rspec' in terminal
