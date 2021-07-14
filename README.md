@@ -1,7 +1,7 @@
 # Sweater Weather
 
 ## About: 
-Sweater Weather is a back-end Rails project that explores how a back-end web developer would consume/create APIs to be given to a theoretical front-end dev. The basic project description and learning goals can be seen below. 
+Sweater Weather is a back-end Rails project that explores how a back-end web developer would consume/create APIs to be given to a theoretical front-end dev. The basic project description and learning goals can be seen below. The app also uses CircleCI as well as Docker.
 
 ![Screen Shot 2021-06-15 at 10 50 12 PM](https://user-images.githubusercontent.com/74991865/122160240-d2799b80-ce2c-11eb-8ca3-a7004e47b9e1.png)
 
