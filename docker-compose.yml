@@ -6,57 +6,32 @@ version: "3.8"
 # service ("web") and our PostgreSQL database instance
 # is another service ("database").
 services:
-
-  database:
-    # Use the postgres 11.5 base image for this container.
-    image: postgres:11.5
-
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: sweater_weather #DockerHub postgres docs state this is optional but must be used when password is set.  It will also create a db under the supplied username which you'll use to connect to in rails console such as: $docker-compose exec postgres psql -U YourUserNameHere
+      POSTGRES_PASSWORD: 'whateverPWYouWant'
     volumes:
-      # We need to tell Docker where on the PostgreSQL
-      # container we want to keep the PostgreSQL data.
-      # In this case we're telling it to use a directory
-      # called /var/lib/postgresql/data, although it
-      # conceivably could have been something else.
-      #
-      # We're associating this directory with something
-      # called a volume. (You can see all your Docker
-      # volumes by running +docker volume ls+.) The name
-      # of our volume is db_data.
-      - db_data:/var/lib/postgresql/data
-
-      # This copies our init.sql into our container, to
-      # a special file called
-      # /docker-entrypoint-initdb.d/init.sql. Anything
-      # at this location will get executed one per
-      # container, i.e. it will get executed the first
-      # time the container is created but not again.
-      #
-      # The init.sql file is a one-line that creates a
-      # user called (arbitrarily) boats_development.
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
-
+      - postgres:/var/lib/postgresql/data 
   web:
     # The root directory from which we're building.
     build: .
-
-    # This makes it so any code changes inside the project
-    # directory get synced with Docker. Without this line,
-    # we'd have to restart the container every time we
-    # changed a file.
+    image: yitwix/sweater_weather_web:latest
+    links:
+      - postgres
     volumes:
-      - .:/code:cached
+      - postgres:/var/lib/postgresql/data 
 
     # The command to be run when we run "docker-compose up".
-    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3001 -b '0.0.0.0'"
 
     # Expose port 3000.
     ports:
-      - "3000:3000"
-
-    # Specify that this container depends on the other
-    # container which we've called "database".
+      - "3001:3001"
+    env_file:
+      - sweater_weather.env
     depends_on:
-      - database
+      - postgres
 
     # Specify the values of the environment variables
     # used in this container.
@@ -64,9 +39,9 @@ services:
       RAILS_ENV: development
       DATABASE_NAME: sweater_weather_development
       DATABASE_USER: sweater_weather_development
-      DATABASE_PASSWORD: 
-      DATABASE_HOST: database
+      DATABASE_PASSWORD: 'whateverPWYouWant'
+      DATABASE_HOST: postgres
 
 # Declare the volumes that our application uses.
 volumes:
-  db_data:
+  postgres: 

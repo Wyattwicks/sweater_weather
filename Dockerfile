@@ -1,20 +1,15 @@
-
 FROM ruby:2.5.3
 
-# Use a directory called /code in which to store
-# this application's files. (The directory name
-# is arbitrary and could have been anything.)
-WORKDIR /code
+# throw errors if Gemfile has been modified since Gemfile.lock
+RUN bundle config --global frozen 1
 
-# Copy all the application's files into the /code
-# directory.
-COPY . /code
+WORKDIR /usr/src/app
 
-# Run bundle install to install the Ruby dependencies.
+COPY Gemfile Gemfile.lock ./
 RUN gem install bundler
+RUN gem install rake -v 13.0.4
 RUN bundle install
 
+COPY . .
 
-# Set "rails server -b 0.0.0.0" as the command to
-# run when this container starts.
-CMD ["rails", "server", "-b", "0.0.0.0"]
+CMD ["rails", "server", "-b", "0.0.0.0"]]
