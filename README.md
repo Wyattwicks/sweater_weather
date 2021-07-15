@@ -1,7 +1,7 @@
 # Sweater Weather
 
 ## About: 
-Sweater Weather is a back-end Rails project that explores how a back-end web developer would consume/create APIs to be given to a theoretical front-end dev. The basic project description and learning goals can be seen below. 
+Sweater Weather is a back-end Rails project that explores how a back-end web developer would consume/create APIs to be given to a theoretical front-end dev. The basic project description and learning goals can be seen below. The app also uses CircleCI as well as Docker.
 
 ![Screen Shot 2021-06-15 at 10 50 12 PM](https://user-images.githubusercontent.com/74991865/122160240-d2799b80-ce2c-11eb-8ca3-a7004e47b9e1.png)
 
@@ -34,6 +34,9 @@ Sweater Weather is a back-end Rails project that explores how a back-end web dev
 
  ### Postman Link
  [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/15721777-61b82803-8a03-45ec-b998-5f735bcb3f57?action=collection%2Ffork&collection-url=entityId%3D15721777-61b82803-8a03-45ec-b998-5f735bcb3f57%26entityType%3Dcollection%26workspaceId%3D3d084559-ed5b-43a5-981c-35220453a7d7)
+ 
+ ### Docker Image
+ https://hub.docker.com/r/yitwix/sweater_weather_web
   
  ## Testing:
   - Full tests can be run with 'bundle exec rspec' in terminal
@@ -58,7 +61,7 @@ Sweater Weather is a back-end Rails project that explores how a back-end web dev
   - example response: ![Screen Shot 2021-06-16 at 8 59 29 AM](https://user-images.githubusercontent.com/74991865/122243253-35951d80-ce81-11eb-9441-18767386aabc.png)
 
 ## Author:
-* Wyatt Wicks [GitHub](https://github.com/Wyattwicks) | [LinkedIn](https://www.linkedin.com/in/wyattwicks/)
+* Wyatt Wicks [GitHub](https://github.com/Wyattwicks) | [LinkedIn](https://www.linkedin.com/in/wyattwicks/) | [Dockerhub](https://hub.docker.com/u/yitwix)
 
 
 ## External APIs used
